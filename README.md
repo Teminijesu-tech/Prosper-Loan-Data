@@ -1,0 +1,20 @@
+# Loan Data Exploration
+## by Teminijesu Ogunleye
+
+
+## Dataset
+
+> This dataset consists of borrower's APR and attributes of 113,937 loans. The attributes included original loan amount, borrower's Prosper rating, loan term, borrower's stated monthly income, as well as many other features such as borrower's employment status, debt to income ratio, current loan status etc. The dataset can be found [here](https://s3.amazonaws.com/udacity-hosted-downloads/ud651/prosperLoanData.csv), with feature documentation available [here](https://docs.google.com/spreadsheets/d/1gDyi_L4UvIrLTEC6Wri5nbaMmkGmLQBk-Yx3z0XDEtI/edit#gid=0)
+
+
+## Summary of Findings
+
+> In the exploration, I found out that the borrower's APR is negatively correlated with the original loan amount and Prosper Ratings. At different size of the loan amount, the APR has a large range, but the range of APR decreased with the increase of loan amount. The borrower APR also decreases with the increasingly better rating. Borrowers with the best Prosper ratings have the lowest APR. It means that the Prosper rating has a strong effect on borrower APR. Interestingly, the relationship between borrower APR and loan amount turns from negative to slightly positive when the Prosper ratings are increased from HR to A or better. This may be because people with A or AA ratings tend to borrow more money, increasing APR could prevent them from borrowing even more and maximizing profit. But people with lower ratings tend to borrow less money, decreasing APR could encourage them to borrow more. I also found out that the borrower's APR decreased with the increase of loan term for people with HR-C raings. But for people with B-AA ratings, the APR's increase with the increase of loan term.
+
+> Outside of the main variables of interest, I found out that the loan amount is positively correlated with the stated monthly income, it makes sense since borrowers with more monthly income could loan more money. The loan amount also increased with the increase of loan term. I also found out that borrowers with better ratings have larger monthly income and loan amount. Employed, self-employed and full time borrowers have more monthly income and loan amount than part-time, retired and not employed borrowers. There seems to be an interaction between categorical term and Prosper rating features. Proportionally, there are more 60month term loans on B and C ratings. It also seems only 36months term loan was available for HR rated category of borrowers. 
+
+> Most borrowers who had defaulted or are defaulting are those who took the longer term loans of 3 and 5years. The highest defaults also seems to be happening at the 3years(36months) listings product. Although, the 36months loan term listing had the highest number of borrowers which might have contributed to the high default. Interestingly, most of the borrowers who defaulted or are defaulting are employed. It would have been nice to see the Industry of employment and possibly see if it can be narrowed to industries. Although, it most be noted that about 60% of their borrowers are employed, this might just be the associated cost of playing in that market. The AA rated borrowers had the lowest level of default which might be an indication of the relaibility of the prosper rating methodology.
+
+## Key Insights for Presentation
+
+> For the presentation, I mainly focused on features that could affect the decision of a borrower for a loan and also possible reasons for default from the charactersistics presented. I started by showing the distribution of borrower's APR and loan amount variable. Then, I showed the relationship between borrower's APR vs. loan amount, as well as borrower's APR vs. prosper rating. I also investigated the effect of rating, loan term(tenor) and home ownership as possible reasons for loan default. I concluded by looking at the effect of rating on the relationship between APR and loan amount, as well as the effect of prosper ratings on the relationship between borrower's APR and loan term.
